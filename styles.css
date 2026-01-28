@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: white;
+  color: #333;
+  line-height: 1.5;
+  padding: 20px 40px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todolist {
+  display: flex;
+  border-radius: 8px;
+  gap: 10px;
+  color: white;
+}
+
+.todolist label {
+  background-color: #0000ff;
+  transition:
+    transform 0.5s,
+    background-color 0.5s;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.todolist label:hover {
+  background-color: #0000ff80;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.add-task {
+  color: #0000ff;
+  background-color: gray;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.add-task:hover {
+  background-color: #0000ff;
+  border-color: #0000ff;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #e5e4e2;
+  padding-left: 15px;
+  border-radius: 5px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+}
+
+.task-item:hover {
+  background-color: #cfcecbf6;
+}
+
+.task-item label {
+  margin-left: 10px;
+}
+
+.item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.delete {
+  background-color: red;
+  margin: 1px;
+  padding: 10px;
+}
+
+.task-item img {
+  color: white;
+}
+
+.task-item .delete:hover {
+  background-color: darkred;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.invisible {
+  visibility: hidden;
+}
